@@ -1,0 +1,25 @@
+{% for venue in app1 %}
+
+
+<div class="venue_entry">
+
+
+
+
+
+<h3><a>Name: {{ venue.name }}</a></h3>
+<h3><a>Name: {{ venue.address }}</a></h3>
+<h3><a>Name: {{ venue.zip_code }}</a></h3>
+<h3><a>Name: {{ venue.phone }}</a></h3>
+<h3><a>Name: {{ venue.web }}</a></h3>
+<h3><a>Name: {{ venue.email_address }}</a></h3>
+<h3>Read<a href=> {{ venue.pdf }} </a></h3>
+
+
+<a href="/images/myw3schoolsimage.jpg" download>
+  <img src="/images/myw3schoolsimage.jpg" alt="W3Schools">
+</a>
+
+</div>
+
+{% endfor %}

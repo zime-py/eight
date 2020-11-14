@@ -1,0 +1,31 @@
+{% extends "blog/base.html"  %}
+ 
+{% block content %}
+
+<div class="card mb-4">
+  {% if post %}  
+    
+    <div class="card-body">
+     
+      <p><h2 class="card-title"><a href="#">{{ post.title|capfirst }}</a></h2></p>
+      <p>Posted on {{ post.pub_date }} by 
+      <a href="#">{{ post.authoer.name }}</a></p>
+      
+              <div class="card-image">
+          <figure class="image">
+              <img src="{{ post.image.url }}" alt="mahmud"
+              style="max-width: 1000px; max-height: 300px;">
+          </figure>
+      </div>
+
+              
+          
+
+
+      <p class="card-text">{{ post.content }}</p>
+    </div>
+    {% else %}
+    <h5>{{ msg }}</h5>
+    {% endif %}
+  </div>
+{% endblock %}

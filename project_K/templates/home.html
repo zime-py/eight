@@ -1,0 +1,14 @@
+{% for post in app1 %}
+
+
+<div class="post_entry">
+
+<h3><a>Name: {{ post.name }}</a></h3>
+
+<h2 ><a>Roll: {{ post.roll }}</a></h2 >
+<h2 ><a>gender: {{ post.gender }}</a></h2 >
+<h2 ><a>city: {{ post.city }}</a></h2 >
+<h2 ><a>time: {{ post.created }}</a></h2 >
+</div>
+
+{% endfor %}
